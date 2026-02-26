@@ -13,7 +13,7 @@ async function bootstrap() {
 
   const frontendUrl = process.env.FRONTEND_URL || 'http://localhost:3001';
   app.enableCors({
-    origin: frontendUrl.split(',').map((url) => url.trim()).filter(Boolean),
+    origin: true, // ให้สะท้อน origin กลับไปอัตโนมัติ
     credentials: true,
   });
   app.use(express.json({ limit: '15mb' }));
