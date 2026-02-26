@@ -1,0 +1,32 @@
+API Key 97abbd14c3b65d462c6c7161d3e9fbcd
+Domain
+localhost,* 
+Product
+Longdo Map
+Package
+Free 
+Subscribe Period 
+-
+Current Cycle
+2026-02-01 to 2026-03-01
+
+
+<script>
+var map
+function initOption() {
+  map = new longdo.Map({
+      layer: [longdo.Layers.POI_TRANSPARENT, longdo.Layers.TRAFFIC],
+      zoom: 10,
+      zoomRange: {
+          min: 9,
+          max: 11
+      },
+      location: {
+          lon: 100.5351375,
+          lat: 13.767734
+      },
+      placeholder: document.getElementById('map'),
+      ui: longdo.UiComponent.None,
+      lastView: false
+  });
+}</script>
